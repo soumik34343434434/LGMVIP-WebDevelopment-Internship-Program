@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="ToDo.css">
+</head>
+<body>
+    <div class="container" id="cont">
+        <div class="header">
+            <button type="button" id="refresh" onclick="refresh()"><i class="fa fa-refresh"></i></button>
+
+            <div id="header-title">
+                <h1>My To Do List</h1>
+            </div>
+         </div> 
+         <div id="box">
+            <h2 id="box-title">Your list goes here:</h2>
+        </div>
+        <div id="add">
+            <input type="text" placeholder="Add List..." id="inp">
+            <button type="button" onclick="add()" id="addList"><i class="fa fa-plus"></i></button>
+        </div>
+    </div>  
+    <script src="ToDo.js"></script>
+</body>
+</html>
